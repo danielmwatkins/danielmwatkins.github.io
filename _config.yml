@@ -31,7 +31,7 @@ github_username:  danielmwatkins
 remote_theme: mmistakes/minimal-mistakes@4.24.0
 minimal_mistakes_skin: "contrast"
 locale: "en-US"
-repository: "danielmwatkins/danielmwatkins.github.io"
+#repository: "danielmwatkins/danielmwatkins.github.io"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
