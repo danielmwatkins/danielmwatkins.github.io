@@ -1,9 +1,15 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Quick-Start Guide"
+  #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "About"
+    url: https://danielmwatkins.github.io/about.html
+  - title: "Science"
+    url: https://danielmwatkins.github.io/science.html
+  - title: "Writing"
+    url: https://danielmwatkins.github.io/writing.html
+  - title: "Art"
+    url: https://danielmwatkins.github.io/art.html
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
