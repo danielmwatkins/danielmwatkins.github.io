@@ -23,14 +23,20 @@ email: daniel_watkins@brown.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Climate scientist specializing in Arctic sea ice and the atmospheric boundary layer.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.danielmwatkins.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://danielmwatkins.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: d_m_watkins
 github_username:  danielmwatkins
 
 # Build settings
 theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "contrast"
+locale: "en-US"
+repository: "danielmwatkins/danielmwatkins.github.io"
 plugins:
   - jekyll-feed
+defaults:
+  values:
+    comments: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.
