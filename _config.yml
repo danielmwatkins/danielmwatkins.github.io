@@ -28,12 +28,13 @@ twitter_username: d_m_watkins
 github_username:  danielmwatkins
 
 # Build settings
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 minimal_mistakes_skin: "contrast"
 locale: "en-US"
 repository: "danielmwatkins/danielmwatkins.github.io"
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 defaults:
   values:
     comments: false
