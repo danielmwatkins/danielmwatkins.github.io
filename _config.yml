@@ -67,12 +67,12 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
+# Site Author
 author:
-  name   : "Daniel Watkins"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Climate scientist at Brown University specializing in Arctic sea ice, atmosphere, and ocean. Chronic dabbler. "
+  name: "Daniel Watkins"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "Climate scientist at Brown University. Chronic dabbler."
   links:
-      url: 
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/d_m_watkins"
@@ -80,8 +80,8 @@ author:
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/danielwatkinsart"
 
-#footer:
-#  links:
+footer:
+  links:
 #    - label: "Twitter"
 #      icon: "fab fa-fw fa-twitter-square"
 #      url: "https://twitter.com/"
