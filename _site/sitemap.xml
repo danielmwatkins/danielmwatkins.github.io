@@ -47,6 +47,9 @@
 <loc>http://localhost:4000/posts/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/assets/css/main.scss/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/page2/</loc>
 </url>
 </urlset>
