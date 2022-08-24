@@ -15,9 +15,13 @@ gallery:
     alt: "jutting to the side in a modernist way, a tower rising, with a stripe inset in the middle"
     title: "tower at oregon state"
   - url: /assets/images/boys_at_the_beach_large.jpeg
-    image_path: /assets/images/boys_at_the_beach_small.jpg
+    image_path: /assets/images/boys_at_the_beach_small.jpeg
     alt: "two boys in silhouette, mirrored forms, leaping over the wash of the surf"
     title: "jumping over the wash"
+  - url: /assets/images/three_powerlines_large.jpeg
+    image_path: /assets/images/three_powerlines_small.jpeg
+    alt: "three supporting structures in a meadow, with fog on the hill behind them"
+    title: "power lines in the claremont land trust"
   - url: /assets/images/whiteside_large.jpeg
     image_path: /assets/images/whiteside_small.jpeg
     alt: "madison avenue, corvallis, oregon. the whiteside theater, seen from kitty-corner"
@@ -26,6 +30,6 @@ gallery:
 
 Black and white film photography, mostly fomopan 100 and tmax 400.
 
-```liquid
-{% raw %}{% include gallery caption="A sampling of my photography. Check out my instagram for more." %}{% endraw %}
-```
+
+{% include gallery caption="A sampling of my photography. Check out my instagram for more." %}
+
