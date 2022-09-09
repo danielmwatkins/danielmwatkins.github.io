@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Post: Link - Daniel M. Watkins, PhD</title>
-<meta name="description" content="This theme supports link posts, made famous by John Gruber. To use, just add link: http://url-you-want-linked to the post’s YAML front matter and you’re done.">
+<!-- begin _includes/seo.html --><title>Getting started with Julia - Daniel M. Watkins, PhD</title>
+<meta name="description" content="Julia is a programming language designed for fast scientific computing. It aims to take the readability of Python and Matlab and couple that with the speed of C and Fortran. It also happens to be the language that a key piece of software in my lab is written in, so it’s one I need to learn how to use. This post describes how I got up and running with Julia in a Jupyter Notebook on a M1 Mac.">
 
 
   <meta name="author" content="Daniel Watkins">
@@ -22,26 +22,28 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Daniel M. Watkins, PhD">
-<meta property="og:title" content="Post: Link">
-<meta property="og:url" content="http://localhost:4000/blog/post-link/">
+<meta property="og:title" content="Getting started with Julia">
+<meta property="og:url" content="http://danielmwatkins.github.io/blog/getting-started-with-julia/">
 
 
-  <meta property="og:description" content="This theme supports link posts, made famous by John Gruber. To use, just add link: http://url-you-want-linked to the post’s YAML front matter and you’re done.">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2010-03-07T00:00:00-05:00">
+  <meta property="og:description" content="Julia is a programming language designed for fast scientific computing. It aims to take the readability of Python and Matlab and couple that with the speed of C and Fortran. It also happens to be the language that a key piece of software in my lab is written in, so it’s one I need to learn how to use. This post describes how I got up and running with Julia in a Jupyter Notebook on a M1 Mac.">
 
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/blog/post-link/">
+
+  <meta property="article:published_time" content="2022-09-09T00:00:00-04:00">
+
+
+
+  <meta property="article:modified_time" content="2022-09-09T00:00:00-04:00">
+
+
+
+
+<link rel="canonical" href="http://danielmwatkins.github.io/blog/getting-started-with-julia/">
 
 
 
@@ -52,7 +54,7 @@
     
       "@type": "Person",
       "name": null,
-      "url": "http://localhost:4000/"
+      "url": "http://danielmwatkins.github.io/"
     
   }
 </script>
@@ -150,7 +152,7 @@
 
   
     <div class="author__avatar">
-      <a href="http://localhost:4000/">
+      <a href="http://danielmwatkins.github.io/">
         <img src="/assets/images/bio-photo.jpg" alt="Daniel Watkins" itemprop="image" class="u-photo">
       </a>
     </div>
@@ -158,7 +160,7 @@
 
   <div class="author__content">
     <h3 class="author__name p-name" itemprop="name">
-      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Daniel Watkins</a>
+      <a class="u-url" rel="me" href="http://danielmwatkins.github.io/" itemprop="url">Daniel Watkins</a>
     </h3>
     
       <div class="author__bio p-note" itemprop="description">
@@ -250,16 +252,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Post: Link">
-    <meta itemprop="description" content="This theme supports link posts, made famous by John Gruber. To use, just add link: http://url-you-want-linked to the post’s YAML front matter and you’re done.">
-    <meta itemprop="datePublished" content="2010-03-07T00:00:00-05:00">
-    
+    <meta itemprop="headline" content="Getting started with Julia">
+    <meta itemprop="description" content="Julia is a programming language designed for fast scientific computing. It aims to take the readability of Python and Matlab and couple that with the speed of C and Fortran. It also happens to be the language that a key piece of software in my lab is written in, so it’s one I need to learn how to use. This post describes how I got up and running with Julia in a Jupyter Notebook on a M1 Mac.">
+    <meta itemprop="datePublished" content="2022-09-09T00:00:00-04:00">
+    <meta itemprop="dateModified" content="2022-09-09T00:00:00-04:00">
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/blog/post-link/" class="u-url" itemprop="url">Post: Link
+            <a href="http://danielmwatkins.github.io/blog/getting-started-with-julia/" class="u-url" itemprop="url">Getting started with Julia
 </a>
           </h1>
           
@@ -270,15 +272,20 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p>This theme supports <strong>link posts</strong>, made famous by John Gruber. To use, just add <code class="language-plaintext highlighter-rouge">link: http://url-you-want-linked</code> to the post’s YAML front matter and you’re done.</p>
+        <p>Julia is a programming language designed for fast scientific computing. It aims to take the readability of Python and Matlab and couple that with the speed of C and Fortran. It also happens to be the language that a key piece of software in my lab is written in, so it’s one I need to learn how to use. This post describes how I got up and running with Julia in a Jupyter Notebook on a M1 Mac.</p>
 
-<blockquote>
-  <p>And this is how a quote looks.</p>
-</blockquote>
+<h2 id="installation">Installation</h2>
+<p>Go to the <a href="https://julialang.org/downloads/">Julia download page</a>. Download the one that matches your system. For Mac, installation is as simple as dragging the icon into the applications folder.</p>
 
-<p>Some <a href="#">link</a> can also be shown.</p>
+<h2 id="make-julia-accessible-from-terminal">Make Julia accessible from Terminal</h2>
+<p>I usually launch Jupyter from within a conda environment in the Terminal. To access Julia from Terminal it needs to be added to the path. Instructions from the [Julia docs] are reproduced here:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mkdir -p /usr/local/bin
+sudo rm -f /usr/local/bin/julia
+sudo ln -s /Applications/Julia-1.8.app/Contents/Resources/julia/bin/julia /usr/local/bin/julia
+</code></pre></div></div>
 
-        <div><a href="https://github.com" class="btn btn--primary">Direct Link</a></div>
+
+        
       </section>
 
       <footer class="page__meta">
@@ -293,9 +300,11 @@
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
     <span itemprop="keywords">
     
-      <a href="/tags/#link" class="page__taxonomy-item p-category" rel="tag">link</a><span class="sep">, </span>
+      <a href="/tags/#julia" class="page__taxonomy-item p-category" rel="tag">julia</a><span class="sep">, </span>
     
-      <a href="/tags/#post-formats" class="page__taxonomy-item p-category" rel="tag">Post Formats</a>
+      <a href="/tags/#programming" class="page__taxonomy-item p-category" rel="tag">programming</a><span class="sep">, </span>
+    
+      <a href="/tags/#scientific-computing" class="page__taxonomy-item p-category" rel="tag">scientific computing</a>
     
     </span>
   </p>
@@ -320,24 +329,13 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2010-03-07T00:00:00-05:00">March 7, 2010</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2022-09-09">September 9, 2022</time></p>
 
       </footer>
 
       
 
       
-  <nav class="pagination">
-    
-      <a href="/blog/post-quote/" class="pagination--pager" title="Post: Quote
-">Previous</a>
-    
-    
-      <a href="/blog/welcome-to-jekyll/" class="pagination--pager" title="Welcome to Jekyll!
-">Next</a>
-    
-  </nav>
-
     </div>
 
     
