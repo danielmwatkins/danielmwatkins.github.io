@@ -278,11 +278,39 @@
 <p>Go to the <a href="https://julialang.org/downloads/">Julia download page</a>. Download the one that matches your system. For Mac, installation is as simple as dragging the icon into the applications folder.</p>
 
 <h2 id="make-julia-accessible-from-terminal">Make Julia accessible from Terminal</h2>
-<p>I usually launch Jupyter from within a conda environment in the Terminal. To access Julia from Terminal it needs to be added to the path. Instructions from the [Julia docs] are reproduced here:</p>
+<p>I usually launch Jupyter from within a conda environment in the Terminal. To access Julia from Terminal it needs to be added to the path. Instructions from the <a href="https://julialang.org/downloads/platform/#macos">Julia docs</a> are reproduced here:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mkdir -p /usr/local/bin
 sudo rm -f /usr/local/bin/julia
 sudo ln -s /Applications/Julia-1.8.app/Contents/Resources/julia/bin/julia /usr/local/bin/julia
 </code></pre></div></div>
+
+<p>Once you’ve run that, Terminal should know what you mean when you type <code class="language-plaintext highlighter-rouge">julia</code>. Go ahead and type that into a Terminal window and you should see:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   _       _ _(_)_     |  Documentation: https://docs.julialang.org
+  (_)     | (_) (_)    |
+   _ _   _| |_  __ _   |  Type "?" for help, "]?" for Pkg help.
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 1.8.0 (2022-08-17)
+ _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
+|__/                   |
+
+julia&gt; 
+</code></pre></div></div>
+
+<h2 id="getting-ready-for-jupyter">Getting ready for Jupyter</h2>
+<p>The next step is to add the <code class="language-plaintext highlighter-rouge">IJulia</code> package so that Jupyter can access the Julia kernel.
+The instructions for this are <a href="https://julialang.github.io/IJulia.jl/stable/manual/installation/">here</a>. In the same Terminal window where you launched Julia, we’ll use the <code class="language-plaintext highlighter-rouge">Pkg</code> package to install IJulia.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>using Pkg
+Pkg.add("IJulia")
+</code></pre></div></div>
+<p>For future reference, if Julia gets updated or moved, you’ll need to run <code class="language-plaintext highlighter-rouge">Pkg.build("IJulia")</code> or else it’ll stop working. If you already have the Anaconda distribution of Python installed, you’re good to go. If not, see the linked IJulia documentation for further instructions.</p>
+
+<h2 id="running-julia-in-a-jupyter-notebook">Running Julia in a Jupyter notebook</h2>
+<p>At this point there’s little else to do but to open a Jupyter notebook in the usual way: that is, by typing</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter notebook
+</code></pre></div></div>
+<p>in Terminal. Once Jupyter has opened in your browser, you can make a new notebook and you should have Julia as an option in the dropdown menu.</p>
 
 
         
