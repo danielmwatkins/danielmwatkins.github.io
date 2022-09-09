@@ -1,14 +1,26 @@
 ---
-title: "Post: Modified Date"
-last_modified_at: 2016-03-09T16:20:02-05:00
+title: "Getting started with Julia"
+last_modified_at: 2022-09-09
 categories:
   - Blog
 tags:
-  - Post Formats
-  - readability
-  - standard
+  - julia
+  - programming
+  - scientific computing
 ---
 
-This post has been updated and should show a modified date if used in a layout.
+Julia is a programming language designed for fast scientific computing. It aims to take the readability of Python and Matlab and couple that with the speed of C and Fortran. It also happens to be the language that a key piece of software in my lab is written in, so it's one I need to learn how to use. This post describes how I got up and running with Julia in a Jupyter Notebook on a M1 Mac.
 
-All children, except one, grow up. They soon know that they will grow up, and the way Wendy knew was this. One day when she was two years old she was playing in a garden, and she plucked another flower and ran with it to her mother. I suppose she must have looked rather delightful, for Mrs. Darling put her hand to her heart and cried, "Oh, why can't you remain like this for ever!" This was all that passed between them on the subject, but henceforth Wendy knew that she must grow up. You always know after you are two. Two is the beginning of the end.
+## Installation
+Go to the [Julia download page][Julia-download]. Download the one that matches your system. For Mac, installation is as simple as dragging the icon into the applications folder.
+
+## Make Julia accessible from Terminal
+I usually launch Jupyter from within a conda environment in the Terminal. To access Julia from Terminal it needs to be added to the path. Instructions from the [Julia docs] are reproduced here:
+```
+sudo mkdir -p /usr/local/bin
+sudo rm -f /usr/local/bin/julia
+sudo ln -s /Applications/Julia-1.8.app/Contents/Resources/julia/bin/julia /usr/local/bin/julia
+```
+
+[Julia-download]: https://julialang.org/downloads/
+[Julia-docs]: https://julialang.org/downloads/platform/#macos
