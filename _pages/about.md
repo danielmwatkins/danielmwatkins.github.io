@@ -11,3 +11,5 @@ My research focuses on the Arctic climate. I’m especially interested in the at
 
 In addition to my research work, I’m a Science Communication Fellow at the Oregon Museum of Science and Industry, and a science writer for Science Journal for Kids. From 2018-2021, I was a host on the science radio show and podcast Inspiration Dissemination.
 
+I'd love to hear from you. You can reach me at daniel underscore watkins at brown dot edu, or though direct message on Twitter or Instagram. 
+
