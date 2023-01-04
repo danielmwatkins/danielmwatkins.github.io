@@ -4,4 +4,10 @@ var store = [{
         "tags": ["julia","programming","scientific computing"],
         "url": "/blog/getting-started-with-julia/",
         "teaser": null
+      },{
+        "title": "LEGO, Satellites, and Sea Ice",
+        "excerpt":"(Stub: will fill this out soon)   In fall 2018, I participated in the Oregon Museum of Science and Industry’s Science Communication Fellowship program.  ","categories": ["Blog"],
+        "tags": ["LEGO","science demos","activities"],
+        "url": "/blog/legos-satellites-and-sea-ice/",
+        "teaser": null
       }]
