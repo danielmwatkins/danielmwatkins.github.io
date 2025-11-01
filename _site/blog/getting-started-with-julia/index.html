@@ -1,11 +1,12 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
-  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
-<html lang="en" class="no-js">
+
+<html lang="en-US" class="no-js">
   <head>
     <meta charset="utf-8">
 
@@ -23,7 +24,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Daniel M. Watkins, PhD">
 <meta property="og:title" content="Getting started with Julia">
-<meta property="og:url" content="http://localhost:4000/blog/getting-started-with-julia/">
+<meta property="og:url" content="http://danielmwatkins.github.io/blog/getting-started-with-julia/">
 
 
   <meta property="og:description" content="Julia is a programming language designed for fast scientific computing. It aims to take the readability of Python and Matlab and couple that with the speed of C and Fortran. It also happens to be the language that a key piece of software in my lab is written in, so it’s one I need to learn how to use. This post describes how I got up and running with Julia in a Jupyter Notebook on a M1 Mac.">
@@ -43,21 +44,12 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/blog/getting-started-with-julia/">
+<link rel="canonical" href="http://danielmwatkins.github.io/blog/getting-started-with-julia/">
 
 
 
 
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    
-      "@type": "Person",
-      "name": null,
-      "url": "http://localhost:4000/"
-    
-  }
-</script>
+
 
 
 
@@ -70,19 +62,17 @@
 
 
   <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Daniel M. Watkins, PhD Feed">
-
-
-<!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
 </script>
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
 
 
 
@@ -94,7 +84,7 @@
 
   </head>
 
-  <body class="layout--default">
+  <body class="layout--default" dir="ltr">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -115,13 +105,35 @@
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/about/">About</a>
+              <a
+                href="/about/"
+                
+                
+              >About</a>
             </li><li class="masthead__menu-item">
-              <a href="/research/">Research</a>
+              <a
+                href="/cv/"
+                
+                
+              >CV</a>
             </li><li class="masthead__menu-item">
-              <a href="/gallery/">Gallery</a>
+              <a
+                href="/research/"
+                
+                
+              >Research</a>
             </li><li class="masthead__menu-item">
-              <a href="/posts/">Blog</a>
+              <a
+                href="/gallery/"
+                
+                
+              >Gallery</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/posts/"
+                
+                
+              >Blog</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -177,6 +189,7 @@ Pkg.add("IJulia")
 <p>in Terminal. Once Jupyter has opened in your browser, you can make a new notebook and you should have Julia as an option in the dropdown menu.</p>
 
 
+      
     </div>
 
     
@@ -186,7 +199,9 @@ Pkg.add("IJulia")
         <!-- start custom footer snippets -->
 
 <!-- end custom footer snippets -->
-        <div class="page__footer-follow">
+        
+
+<div class="page__footer-follow">
   <ul class="social-icons">
     
 
@@ -198,14 +213,14 @@ Pkg.add("IJulia")
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2023 Daniel M. Watkins, PhD. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+<div class="page__footer-copyright">&copy; 2025 <a href="http://danielmwatkins.github.io">Daniel M. Watkins, PhD</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
 
     
   <script src="/assets/js/main.min.js"></script>
-
 
 
 
