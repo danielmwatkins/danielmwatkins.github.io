@@ -28,8 +28,11 @@ gallery:
     title: "the whiteside"
 ---
 
-Black and white film photography, mostly fomopan 100 and tmax 400.
+Black and white film photography, mostly fomopan 100, hp5, and tmax 400.
 
 
 {% include gallery caption="A sampling of my photography. Check out my instagram for more." %}
 
+My collage work ranges from free-wheeling experiments in classic collage tradition to more regimented, geometric pieces. Take a look at my collection "Mirror Worlds" [here][mirror_worlds].
+
+[mirror_worlds]: https://danielmwatkins.github.io/art/symmetry
